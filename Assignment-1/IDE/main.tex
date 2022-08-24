@@ -1,0 +1,167 @@
+\def\mytitle{IMPLEMENTATION OF BOOLEAN LOGIC}
+\def\myauthor{V.GOKULKUMAR}
+\def\contact{velicharlagokulkumar@gmail.com}
+\def\mymodule{Future Wireless Communication (FWC)}
+\documentclass[10pt, a4paper]{article}
+\usepackage[a4paper,outer=1.5cm,inner=1.5cm,top=1.75cm,bottom=1.5cm]{geometry}
+\twocolumn
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage[colorlinks,linkcolor={black},citecolor={blue!80!black},urlcolor={blue!80!black}]{hyperref}
+\usepackage[parfill]{parskip}
+\usepackage{lmodern}
+\usepackage{tikz}
+%\documentclass[tikz, border=2mm]{standalone}
+\usepackage{karnaugh-map}
+%\documentclass{article}
+\usepackage{tabularx}
+
+\usepackage{circuitikz}
+\usetikzlibrary{calc}
+
+
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{watermark}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{titlesec}
+
+\titlespacing{\subsection}{1pt}{\parskip}{3pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\paragraph}{0pt}{\parskip}{\parskip}
+\newcommand{\figuremacro}[5]{
+    \begin{figure}[#1]
+        \centering
+        \includegraphics[width=#5\columnwidth]{#2}
+        \caption[#3]{\textbf{#3}#4}
+        \label{fig:#2}
+    \end{figure}
+}
+
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+\thiswatermark{\centering \put(410,-128.0){\includegraphics[scale=0.09]{iith_logo}} }
+\title{\mytitle}
+\author{\myauthor\hspace{1em}\\\contact\\IITH\hspace{0.5em}-\hspace{0.5em}\mymodule}
+\date{}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\begin{abstract}
+	    To Obtain the Boolean Expression for the Logic circuit shown below
+	  	\end{abstract}
+	  	
+	   \begin{circuitikz} \draw
+(0,2) node[or port]  (myor1) {}
+(0,0) node[and port] (myand) {}
+(2,1) node[or port] (myor2) {}
+(myor1.out) -- (myor2.in 1)
+(myand.out) -- (myor2.in 2);
+
+\node[left] at (myor1.in 1) {\(X\)};
+\node[left] at (myor1.in 2) {\(Y\)};
+\node[left] at (myor1.in 1)[ocirc] {};
+\node[left] at (myand.in 2) [ocirc] {};
+\node[left] at (myand.in 1) {\(Y\)};
+\node[left] at (myand.in 2) {\(Z\)};
+\node[right] at (myor1.out) {\((X'+Y)\)};
+\node[right] at (myand.out) {\((YZ')\)};
+
+\node[right] at (myor2.out) {\(F=(X'+Y)+(YZ)\)};
+\end{circuitikz}
+\begin{center}
+Fig. 1
+\end{center}
+
+	\section{Components}
+  \begin{tabularx}{0.4\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X | }
+\hline
+ \textbf{Components}& \textbf{Values} & \textbf{Quantity}\\
+\hline
+Arduino & UNO & 1 \\  
+\hline
+JumperWires& M-M & 5 \\ 
+\hline
+Breadboard &  & 1 \\
+\hline
+\end{tabularx}
+   \section{Implementation}
+   	\subsection{METHOD-1}
+   	\paragraph{}
+The truth table  for Fig. 1 is available in Table-1
+Using Boolean logic, output F in Table 1 can be expressed in terms of the inputs X, Y, Z as F=(X'+Y)+(Y.Z').................(2.1)
+Built in led at 13th pin of Arduino will glow for the logic '1' of F based on the initialization of X,Y,Z.
+The code below realizes the Boolean logic for F in Table-1
+\\
+\begin{lstlisting}
+https://github.com/velicharlagokulkumar/FWC_module1/blob/main/Assignment-1/codes/method_1.ino
+\end{lstlisting}
+	\begin{tabularx}{0.46\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X | }
+\hline
+ X & Y & Z & F \\
+\hline
+0 & 0 & 0 & 1 \\  
+\hline
+0 & 0 & 1 & 1 \\ 
+\hline
+0 & 1 & 0 & 1 \\
+\hline
+0 & 1 & 1 & 1 \\
+\hline
+1 & 0 & 0 & 0 \\  
+\hline
+1 & 0 & 1 & 0 \\ 
+\hline
+1 & 1 & 0 & 1 \\
+\hline
+1 & 1 & 1& 1 \\
+\hline
+\end{tabularx}
+\begin{center}
+Table-1 
+  \end{center}
+\begin{center}
+\subsection{METHOD-2}
+     \begin{karnaugh-map}[4][2][1][$YZ$][$X$]
+        \minterms{0,1,2,3,6,7}
+        \maxterms{4,5}
+        \implicant{0}{2}
+        \implicant{3}{6}
+    \end{karnaugh-map}
+\end{center}
+\begin{center}
+Fig. 2
+\end{center}
+    \paragraph{Karnugh Map :}
+The expression in (2.1) can be minimized using the K-map in Fig 2. In Fig.2 ,the implicants in boxes 0,1,2,3 result in X'
+The implicants in boxes 2,3,6,7 result in Y
+Thus, after minimization using Fig. 2, (2.1) can
+be expressed as
+F=X'+ Y........(2.2).
+Verify the truth table for F in TABLE 1.
+The code below realizes the Boolean logic for F in 2.2
+\begin{lstlisting}
+https://github.com/velicharlagokulkumar/FWC_module1/blob/main/Assignment-1/codes/method_2.ino
+\end{lstlisting}
+\subsection{METHOD-3}
+The code below realizes the Boolean logic for F in (2.2)  using 5V,GND of Arduino
+\\
+D3,D4,D5 Pins of Arduino are configured as input pins instead of initializing X,Y,Z inside software,inputs are given manually as X,Y,Z.Built in led will glow based on F satisfying the Table-1
+\begin{lstlisting}
+https://github.com/velicharlagokulkumar/FWC_module1/blob/main/Assignment-1/codes/method_3.ino
+\end{lstlisting}
+\bibliographystyle{ieeetr}
+\end{document}
