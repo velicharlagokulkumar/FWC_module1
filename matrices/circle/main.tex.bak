@@ -55,9 +55,13 @@ columns=fullflexible
 	\tableofcontents
    \section{Problem}
   Let A be the centre of the circle $x^2 + y^2-2x-4y-20=0$. Suppose the tangents at the points  B(1,7) and D(4.-2) on the circle meet at the point C. Find the area of the quadrilateral ABCD.
-
+\section{Construction}
+  \includegraphics[scale=0.47]{matrix.pdf}
+  	\begin{center}
+  Figure of construction
+  	\end{center}
    \section{Solution}
-   The input parameters for this construction are 
+   The input parameters for this construction are
 \begin{center}
 \begin{tabular}{|c|c|c|}
 	\hline
@@ -73,7 +77,7 @@ columns=fullflexible
 	\hline
 \end{tabular}
 \end{center}
-Circle equation : $x^2+y^2-2x-4y-20=0$   \\~\\
+Circle equation : $x^2+y^2-2x-4y-20=0$\\
 Equations of tangents at $\vec{B} , \vec{D}$ are given by
 \begin{align}
 x+7y-(x+1)-2(y+7)-20=0\\
@@ -114,20 +118,14 @@ Letting,
 	\begin{align}
 &=2\times\frac{1}{2}\norm{\vec{v1}\times\vec{v2}}
 \end{align}
-$\therefore$The area of quadrilateral ABCD=75 sq.units\\~\\
+$\therefore$The area of quadrilateral ABCD=75 sq.units\\
 \textbf{termux commands :}
 \begin{lstlisting}
-bash sh.sh
+bash sh2.sh............using shell command
 \end{lstlisting}
-The below python code realizes the above construction:
-
+Below python code realizes the above construction:
 \begin{lstlisting}
 https://github.com/velicharlagokulkumar/FWC_module1/blob/main/matrices/circle/codes/matrix.py
 \end{lstlisting}
- \section{Construction}
-  \includegraphics[scale=0.54]{matrix.pdf}
-  	\begin{center}
-  Figure of construction
-  	\end{center}
-%\bibliographystyle{ieeetr}
+
 \end{document}
