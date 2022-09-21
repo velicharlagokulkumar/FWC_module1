@@ -66,5 +66,5 @@ for i, txt in enumerate(vert_labels):
         plt.grid()
         plt.axis('equal')
 
-       plt.savefig('/sdcard/gokul/matrices/circle/images/matrix.pdf')
-       subprocess.run(shlex.split("termux-open /sdcard/gokul/matrices/circle/images/matrix.pdf"))
+plt.savefig('/sdcard/gokul/matrices/circle/images/matrix.pdf')
+subprocess.run(shlex.split("termux-open /sdcard/gokul/matrices/circle/images/matrix.pdf"))
