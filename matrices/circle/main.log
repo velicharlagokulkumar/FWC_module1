@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  21 SEP 2022 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  21 SEP 2022 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1034,14 +1034,8 @@ Package pdftex.def Info: ./images//iith_logo3.png  used on input line 131.
 
 
  <./images//iith_logo3.png> <./images//matrix.pdf>] (main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 5FF3006D1998428709CF60F103CF51A2;264
-(rerunfilecheck)             After:  662E42DA7AA08D032185924B46D02286;264.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 662E42DA7AA08D032185924B46D02286;264.
  ) 
 Here is how much of TeX's memory you used:
  39718 strings out of 478338
