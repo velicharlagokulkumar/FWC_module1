@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  21 SEP 2022 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  21 SEP 2022 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,52 +1019,38 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 57.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 57.
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
-
- []
-
-
-Overfull \hbox (4.1331pt too wide) in paragraph at lines 122--123
-\OT1/lmss/m/n/10 The be-low python code re-al-izes the above con-struc-tion: 
- []
-
 <./images//matrix.pdf, id=21, 462.52798pt x 346.89601pt>
 File: ./images//matrix.pdf Graphic file (type pdf)
 <use ./images//matrix.pdf>
-Package pdftex.def Info: ./images//matrix.pdf  used on input line 128.
-(pdftex.def)             Requested size: 249.76138pt x 187.32104pt.
-
-Overfull \hbox (28.68657pt too wide) in paragraph at lines 128--129
-[] 
- []
-
+Package pdftex.def Info: ./images//matrix.pdf  used on input line 59.
+(pdftex.def)             Requested size: 217.38817pt x 163.04114pt.
 <./images//iith_logo3.png, id=22, 1116.17pt x 1045.9075pt>
 File: ./images//iith_logo3.png Graphic file (type png)
 <use ./images//iith_logo3.png>
-Package pdftex.def Info: ./images//iith_logo3.png  used on input line 133.
+Package pdftex.def Info: ./images//iith_logo3.png  used on input line 131.
 (pdftex.def)             Requested size: 145.1072pt x 135.97275pt.
-[1{C:/Users/velic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+ [1{C:/Users/velic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
 
  <./images//iith_logo3.png> <./images//matrix.pdf>] (main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5FF3006D1998428709CF60F103CF51A2;264.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 5FF3006D1998428709CF60F103CF51A2;264
+(rerunfilecheck)             After:  662E42DA7AA08D032185924B46D02286;264.
  ) 
 Here is how much of TeX's memory you used:
  39718 strings out of 478338
  910709 string characters out of 2836231
- 1567099 words of memory out of 3000000
+ 1572099 words of memory out of 3000000
  57612 multiletter control sequences out of 15000+600000
  518721 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,89p,1195b,1018s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 84i,16n,89p,1195b,1019s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/enc/dvips/lm/lm-rm.enc}{
 C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/enc/dvips/lm/lm-mathex.enc}
 {C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/enc/dvips/lm/lm-mathsy.enc
@@ -1081,7 +1067,7 @@ pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmss10
 sbx10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/
 lmsy10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/am
 sfonts/symbols/msam10.pfb>
-Output written on main.pdf (1 page, 235311 bytes).
+Output written on main.pdf (1 page, 235303 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)
