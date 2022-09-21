@@ -12,6 +12,7 @@
 \usepackage{lmodern}
 \usepackage{tikz}
 	\usepackage{physics}
+\usepackage{hyperref}
 %\documentclass[tikz, border=2mm]{standalone}
 \usepackage{karnaugh-map}
 %\documentclass{article}
@@ -48,8 +49,7 @@ columns=fullflexible
 }
 \thiswatermark{\centering \put(181,-119.0){\includegraphics[scale=0.13]{iith_logo3}} }
 \title{\mytitle}
-\author{\myauthor\hspace{1em}\\\contact\\FWC22034\hspace{6.5em}IITH\hspace{0.5em}\mymodule\hspace{6em}September}
-\date{}
+\author{\myauthor\hspace{1em}\\\contact\\FWC22034\hspace{6.5em}IITH\hspace{0.5em}\mymodule\hspace{6em}Assignment}
 \begin{document}
 	\maketitle
 	\tableofcontents
@@ -77,6 +77,17 @@ columns=fullflexible
 	\hline
 \end{tabular}
 \end{center}
+The steps for constructing above figure are :
+\begin{enumerate}
+ \item Draw a circle of radius $r$
+ \item Locate $\vec{B}$,$\vec{D}$ on the circle
+ \item Find the equations of the tangents drawn from the $\vec{B}$,$\vec{D}$ using the formula 
+		\begin{center}
+			$xx_1+yy_1+g(x+x_1)+f(y+y_1)+c=0$
+		\end{center}
+		where \\$x_1$,$y_1$ are the coordinates of the point from where the tangents are drawn
+\item Solve the both the equations of the tangents to find $\vec{C}$
+\end{enumerate}
 Circle equation : $x^2+y^2-2x-4y-20=0$\\
 Equations of tangents at $\vec{B} , \vec{D}$ are given by
 \begin{align}
@@ -98,13 +109,6 @@ From (3),(4) let
 \end{align}
 Solve (5) and (6) \\
 $\therefore$ Coordinates of C is  $\vec{C} = \myvec{16 \\ 7}$\\
-Length of BC is  
-	\begin{align}
-			\vec{B}-\vec{C} &= \myvec{-15 \\ 0}\\
-            \norm{\vec{B}-\vec{C}} &=\norm{\myvec{-15 \\ 0}}\\
-			&=\sqrt{\myvec{-15 & 0}\myvec{-15 \\ 0}} \\
-			&=15
-\end{align}
 Letting,
 \begin{align}
 \vec{v1}=\vec{A}-\vec{B}\\
@@ -123,9 +127,8 @@ $\therefore$The area of quadrilateral ABCD=75 sq.units\\
 \begin{lstlisting}
 bash sh2.sh............using shell command
 \end{lstlisting}
-Below python code realizes the above construction:
-\begin{lstlisting}
-https://github.com/velicharlagokulkumar/FWC_module1/blob/main/matrices/circle/codes/matrix.py
-\end{lstlisting}
-
+\begin{center}
+Below python code realizes the above construction :
+\end{center}
+\url{https://github.com/velicharlagokulkumar/FWC_module1/blob/main/matrices/circle/codes/matrix.py}
 \end{document}
