@@ -12,14 +12,11 @@
 \usepackage{lmodern}
 \usepackage{tikz}
 	\usepackage{physics}
-\usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{hyperref}
 %\documentclass[tikz, border=2mm]{standalone}
-\usepackage{karnaugh-map}
+%\usepackage{karnaugh-map}
 %\documentclass{article}
 \usepackage{tabularx}
-\usepackage{circuitikz}
+%\usepackage{circuitikz}
 \usetikzlibrary{calc}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -27,6 +24,7 @@
 \usepackage{watermark}
 \usepackage{lipsum}
 \usepackage{xcolor}
+\usepackage{enumitem}
 \usepackage{listings}
 \usepackage{float}
 \usepackage{titlesec}
@@ -60,9 +58,9 @@ columns=fullflexible
 \section{Construction}
   \includegraphics[scale=0.47]{matrix.pdf}
   	\begin{center}
-Figure of construction
+  Figure of construction
   	\end{center}
-   \section{Solution}
+  \section{Solution}
    The input parameters for this construction are
 \begin{center}
 \begin{tabular}{|c|c|c|}
@@ -134,3 +132,4 @@ Below python code realizes the above construction :
 \fbox{\parbox{8.5cm}{\url{https://github.com/velicharlagokulkumar/FWC_module1/blob/main/matrices/circle/codes/matrix.py}}}
 \end{center}
 \end{document}
+ent}
