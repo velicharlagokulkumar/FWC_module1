@@ -89,8 +89,6 @@ plt.legend(loc='best')
 plt.grid() # minor
 plt.axis('equal')
 
-#if using termux
 plt.savefig('/sdcard/gokul/matrices/lines/images/matrix.pdf')
 subprocess.run(shlex.split("termux-open  /sdcard/gokul/matrices/lines/images/matrix.pdf"))
-#else
-#plt.show()
+
