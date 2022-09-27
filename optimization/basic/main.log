@@ -1,4 +1,8 @@
+<<<<<<< HEAD:optimization/basic/main.log
 This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  29 SEP 2022 06:57
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  27 SEP 2022 20:33
+>>>>>>> 5772864 (modified pdf):matrices/conics/main.log
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -982,12 +986,22 @@ pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmmi7.
 pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmr10.
 pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmss10
 .pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmss1
+<<<<<<< HEAD:optimization/basic/main.log
 2.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmss
 17.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lms
 sbx10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/
 lmsy10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm
 /lmtt10.pfb>
 Output written on main.pdf (1 page, 223068 bytes).
+=======
+7.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lmss
+bx10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/l
+msy10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/
+lmsy7.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/
+lmtt10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/am
+sfonts/symbols/msam10.pfb>
+Output written on main.pdf (2 pages, 278372 bytes).
+>>>>>>> 5772864 (modified pdf):matrices/conics/main.log
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  14 named destinations out of 1000 (max. 500000)
