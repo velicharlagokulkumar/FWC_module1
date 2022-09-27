@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import numpy as np
 import mpmath as mp
 import matplotlib.pyplot as plt
