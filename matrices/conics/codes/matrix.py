@@ -44,9 +44,9 @@ S=np.array(([f2,l1]))
 R=np.array(([f2,l2]))
 
 
-n =  np.array(([2,3])) #normal vector
+n =  np.array(([10,15])) #normal vector
 m =  omat@n #direction vector
-c = 9
+c = 45
 A= c/(n@e1)*e1 #x-intercept
 D= c/(n@e2)*e2 #y-intercept
 C= c/(n@e1)*e3 #x-intercept
