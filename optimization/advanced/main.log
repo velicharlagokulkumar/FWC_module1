@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  3 OCT 2022 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.8.27)  3 OCT 2022 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,7 +988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--159
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 159--159
-\OT1/lmtt/m/n/10 module1 / blob / main / optimization / other / codes /
+\OT1/lmtt/m/n/10 module1 / blob / main / optimization / advanced / codes /
  []
 
 [2
@@ -999,7 +999,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  25535 strings out of 478338
- 471526 string characters out of 2836231
+ 471547 string characters out of 2836231
  862520 words of memory out of 3000000
  43490 multiletter control sequences out of 15000+600000
  515651 words of font info for 68 fonts, out of 8000000 for 9000
@@ -1023,7 +1023,7 @@ x10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/lm
 sy10.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/l
 msy7.pfb><C:/Users/velic/AppData/Local/Programs/MiKTeX2/fonts/type1/public/lm/l
 mtt10.pfb>
-Output written on main.pdf (2 pages, 242605 bytes).
+Output written on main.pdf (2 pages, 242618 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)
