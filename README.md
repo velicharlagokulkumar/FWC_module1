@@ -1,4 +1,4 @@
-# Future Wirless Communications (IITH)
+# Future Wireless Communications (IITH)
 
 This repo contains the assignments of FWC_module1
 
