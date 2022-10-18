@@ -254,7 +254,7 @@ The code below realizes the Boolean logic for F in (2.2)  using 5V,GND of Vaman 
 \begin{center}
 \end{center}
 \begin{lstlisting}
-svn co https://github.com/velicharlagokulkumar/iot/trunk/codes/setup
+svn co https://github.com/velicharlagokulkumar/FWC_module1/trunk/iot/codes/setup
 cd  setup
 pio run
 pio run -t upload
@@ -277,12 +277,12 @@ where your computer's ip address is the output of ifconfig and given by 192.168.
 proot-distro login debian
 cd  /data/data/com.termux/files/home/
 mkdir iot
-svn co https://github.com/velicharlagokulkumar/iot/trunk/codes/ota
+svn co https://github.com/velicharlagokulkumar/FWC_module1/trunk/iot/codes/ota
 cd codes
 \end{lstlisting}
 \item Assuming that the username is gokul and password is gokulkumar2208, flash the following code wirelessly
 \begin{center}
-\fbox{\parbox{8cm}{\url{https://github.com/velicharlagokulkumar/FWC_module1/blob/main/iot/codes/src/main.cpp}}}
+\fbox{\parbox{8cm}{\url{https://github.com/velicharlagokulkumar/FWC_module1/blob/main/iot/codes/ota/src/main.cpp}}}
 \end{center}
 through 
 \begin{lstlisting}
